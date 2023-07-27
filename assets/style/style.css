@@ -1,0 +1,106 @@
+*, * ::before, * ::after {
+  box-sizing: border-box;
+} 
+.root {
+  height: 2000px;
+  /* display: flex; */
+}
+.parent {
+  width: 300px;
+  height: 300px;
+  border: 1px solid red;
+  position: relative;
+}
+
+
+/* .parent::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-bottom: 1px solid blue;
+  border-right: 1px solid blue;
+  position: absolute;
+  transform: rotate(90deg);
+} */
+.square-orange {
+  background-color: orange;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top:  -10px;
+  right: -70px;
+}
+
+.parent:hover {
+  border: 1px solid blueviolet;
+}
+.parent:hover > .square-orange {
+  background-color: blueviolet;
+}
+
+.square-green {
+  background-color: green;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  top: 140px;
+  right: 30px;
+}
+.square:nth-child(2n) {
+  border: 1px solid red;
+}
+
+.square-pink {
+  background-color: pink;
+  width: 50px;
+  height: 50px;
+}
+.square-blue {
+  background-color: orange;
+  width: 50px;
+  height: 50px;
+}
+
+.flex {
+  background-color: lightblue;
+  min-height: 600px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header {
+  background-color: rgb(34, 125, 116);
+  min-height: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer {
+  background-color: rgb(34, 125, 116);
+  min-height: 130px;
+}
+.main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.aside {
+  min-height: 250px;
+  width: 27%;
+  background-color: greenyellow;
+}
+.article {
+  min-height: 250px;
+  width: 70%;
+  background-color: orange;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+.q {
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+}
